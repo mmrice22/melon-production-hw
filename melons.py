@@ -33,4 +33,19 @@ class Melon(object):
 
 # FIXME: Add Squash class definition here.
 class Squash(Melon):
-    pass
+    """Winter Squash"""
+
+    def prep_n_paint(self):
+        """Prepare the squash"""
+        robots.cleanerbot.clean(self)
+        robots.stickerbot.apply_logo(self)
+        robots.painterbot.paint(self)
+
+# how is the melons file grabbing from the robots file
+# when melons isn't an instance of Robot?
+
+
+
+
+    
+
